@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontaktai</title>
+    <link rel="stylesheet" type="text/css" href="/css/mano.css">
+</head>
+<body>
+    <h1>Kontaktai</h1>
+    <form action="/php/SaugotiZinute.php" method="get">
+        <label for="fn">Vardas</label>
+        <input name="vardas" type="text" id="fn"/>
+        <p/>
+        <label for="sn">Pavarde</label>
+        <input name="pavarde" type="text" id="sn"/>
+        <p/>
+        <label for="masina">Pavarde</label>
+        <select name="cars"id="masina">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <input name="spalva" type="color"/>
+        <p/>
+        <input name="data" type="date"/>
+        <p/>
+        <input name="checkbox" type="checkbox"/>
+        <p/>
+        <input name="emailas" type="email"/>
+        <p/>
+        <input name="res" type="reset"/>
+        <p/>
+        <input name="failas" type="file"/>
+        <p/>
+        <input name="paveiksliukas" type="image"/>
+        <p/>
+        <input name="res" type="reset"/>
+        <p/>
+        <input name="dl" type="datetime-local"/>
+        <p/>
+        <input name="rang" type="range"/>
+        <p/>
+        <input name="sear" type="search"/>
+        <p/>
+        <input name="cal" type="calendar"/>
+        <p/>
+        <label for="zinute">Tavo zinute man</label>
+        <p/>
+        <textarea name="message" type="text" id="zinute">
+            The cat was playing inthe garden
+        </textarea>
+        <p/>
+        <button type="button" onclick="alert('Hello world')">Labas!</button>
+        <input type="submit" VALUE="Submit">
+
+    </form>
+</body>
+</html>
