@@ -1,3 +1,33 @@
-body {
-    background-color: deepskyblue;
+.grid_item_1 {
+    grid-area: A;
+    background-color: aquamarine;
 }
+.grid_item_2 {
+    grid-area: B;
+    background-color: yellow;
+}
+.grid_item_3 {
+    grid-area: C;
+    background-color: green;
+    min-width: 100px;
+}
+.grid_item_4 {
+    grid-area: D;
+    background-color: indianred;
+    min-width: 200px;
+}
+.grid_item_5 {
+    grid-area: E;
+    background-color: deepskyblue;
+    min-width: 150px;
+}
+
+#grid {
+    display: grid;
+    grid-template-areas:
+            'A A A'
+            'B C D'
+            'E E E'
+}
+
+

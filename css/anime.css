@@ -1,0 +1,13 @@
+@keyframes colors {
+    0% { background-color: deepskyblue; }
+    25% { background-color: aquamarine; }
+    50% { background-color: blue; }
+    75% { background-color: cornflowerblue; }
+    100% { background-color: deepskyblue; }
+}
+
+body {
+    animation-name: colors;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}

@@ -2,22 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pagrindinis failas</title>
     <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" type="text/css" href="/css/mano.css">
 </head>
 <body>
-    <h1>Mano puslapis</h1>
-    <p>Pirmas puslapis</p>
-    <p>Lorem <b>ipsum</b> dolor sit amet</p>
-    <p title="Esu paragrafo užuomina">
-        Tai paragrafas
-    </p>
-    <a href="http:///google.lt">Nuoroda į Google</a>
-    <img src="http://www.kaunascoding.lt/wp-content/themes/vcs/img/logo.png"/>
-    <p>Lorem <b><i>ipsum</i></b> dolor sit amet</p>
-    <p/>
-    <p>Lorem <b><i>ipsum</i></b> dolor sit amet</p>
-    <div>Visos teisės saugomos</div>
+    <!--emmet cheat sheet
+    div#grid>div.grid_item_$*5
+    -->
+    <div id="grid">
+        <div class="grid_item_1">
+            <div>
+                <img src="/img/logo.png" alt="Logo"/>
+            </div>
+            <div>
+                <a href="#apie">Apie</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#kontaktai">Kontaktai</a>
+            </div>
+            <div class="login">
+                <a href="#login">Admin
+                    <img src="/img/admin.svg"
+                        alt="Login as admin"
+                        height="25px"
+                        width="25px" />
+                </a>
+            </div>
+        </div>
+        <div class="grid_item_2">Left</div>
+        <div class="grid_item_3">Center</div>
+        <div class="grid_item_4">Right</div>
+        <div class="grid_item_5">Footer</div>
+    </div>
 </body>
 </html>
