@@ -17,13 +17,13 @@
         document.write('B = ' + B + ';<p/>');
         document.write('D = ' + D + ';<p/>');
 
-        if (C > A)
-            X = C;
-        else
+        if (C < A)
             throw "Neteisingai pasirinktas rėžis C, jis turi būti A <= C";
 
         if (C > B)
             throw "Nėra sankirtos, nes C > B";
+
+        X = C;
 
         if (B < D)
             Y = B;
