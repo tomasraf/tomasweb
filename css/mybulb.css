@@ -1,0 +1,7 @@
+.bulb_off {
+    content: url("/img/light-off.png");
+}
+
+.bulb_on {
+    content: url("/img/light-on.png");
+}

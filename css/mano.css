@@ -1,33 +1,182 @@
-.grid_item_1 {
-    grid-area: A;
-    background-color: aquamarine;
+.grid_item_11 {
+    grid-area: A1;
+    background-color: white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
+.grid_item_12 {
+    grid-area: A2;
+    background-color: white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top: 10px;
+}
+.grid_item_13 {
+    grid-area: A3;
+    background-color: silver;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding-right: 50px;
+}
+
 .grid_item_2 {
     grid-area: B;
-    background-color: yellow;
+    background-color: white;
 }
 .grid_item_3 {
     grid-area: C;
-    background-color: green;
-    min-width: 100px;
+    background-color: white;
 }
 .grid_item_4 {
     grid-area: D;
     background-color: indianred;
-    min-width: 200px;
 }
 .grid_item_5 {
     grid-area: E;
     background-color: deepskyblue;
-    min-width: 150px;
+}
+
+.grid_item_51 {
+    grid-area: E1;
+    background-color: deepskyblue;
 }
 
 #grid {
     display: grid;
     grid-template-areas:
-            'A A A'
+            'A1 A2 A3'
             'B C D'
-            'E E E'
+            'E E E1';
+    grid-template-columns: 250px auto 250px;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+
+.skills {
+    padding: 0 0 20px 15px;
+    font-size: 18px;
+}
+.skill {
+    padding-bottom: 10px;
+}
+
+.skillProgress {
+    background-color: antiquewhite;
+    border-width: 2px;
+    border-color: dimgray;
+    border-radius: 5px;
+    border-style: solid;
+    width: 100%;
+    height: 20px;
+}
+
+.progress {
+    border-radius: 2px;
+    background-image: linear-gradient(white, cornflowerblue, cornflowerblue);
+    width: 100%;
+    height: 100%;
+}
+.html {
+    width: 100%;
+}
+.css {
+    width: 70%;
+}
+.js {
+    width: 30%;
+}
+.php {
+    width: 50%;
+}
+.sql {
+    width: 10%;
+}
+
+.progressbar {
+    border-style: solid;
+    border-width: 2px;
+    border-color: dimgray;
+    border-radius: 5px;
+    background-image: linear-gradient(white, cornflowerblue, cornflowerblue);
+    width: 100%;
+    height: 20px;
+}
+
+
+.logoimg {
+    vertical-align: middle;
+}
+
+.navbar {
+    width: 100%;
+    background-image: linear-gradient(white, dimgray, dimgray);
+    overflow: auto;
+}
+
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: #3e3e3e;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%; /* Four links of equal widths */
+    text-align: center;
+    border-right: 2px solid darkgray;
+}
+.navbar a:last-child {
+    border-right: none;
+}
+
+.navbar a:hover {
+    background-image: linear-gradient(silver, #000, #000);
+    color: white;
+}
+
+.navbar a.active {
+    background-image: linear-gradient(white, #4CAF50, #4CAF50);
+    color: white;
+}
+
+.mainpara {
+    padding: 10px;
+}
+
+.personPhoto {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 0px 10px 10px 0px;
+}
+
+@media screen and (max-width: 800px) {
+    #grid {
+        display: grid;
+        float: none;
+        grid-template-areas:
+                'A1 A3'
+                'A2 A2'
+                'B B'
+                'C C'
+                'D D'
+                'E E1';
+        grid-template-columns: 100%;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+    .navbar {
+        width: 100%;
+        background-color: silver;
+        overflow: hidden;
+    }
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
 }
 
 

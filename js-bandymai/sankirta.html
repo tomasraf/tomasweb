@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Testas</h1>
+<script>
+    try {
+        let A = -5, B = 0, C = -4, D = 4;
+        //let A = 0, B = 3, C = 1, D = 6;
+        let X = A,  Y = B;
+
+        document.write('A = ' + A + ';<p/>');
+        document.write('C = ' + C + ';<p/>');
+        document.write('B = ' + B + ';<p/>');
+        document.write('D = ' + D + ';<p/>');
+
+        if (C > A)
+            X = C;
+        else
+            throw "Neteisingai pasirinktas rėžis C, jis turi būti A <= C";
+
+        if (C > B)
+            throw "Nėra sankirtos, nes C > B";
+
+        if (B < D)
+            Y = B;
+        else
+            Y = D;
+
+        document.write('X = ' + X + ';<p/>' + 'Y = ' + Y + '<p/>');
+    }
+    catch (e) {
+        document.write(e);
+    }
+</script>
+
+</body>
+</html>
