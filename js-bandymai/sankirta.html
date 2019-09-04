@@ -10,12 +10,11 @@
     try {
         let A = -5, B = 0, C = -4, D = 4;
         //let A = 0, B = 3, C = 1, D = 6;
-        let X = A,  Y = B;
+        let X = A, Y = B;
 
-        document.write('A = ' + A + ';<p/>');
-        document.write('C = ' + C + ';<p/>');
-        document.write('B = ' + B + ';<p/>');
-        document.write('D = ' + D + ';<p/>');
+        let valueNames = ['A', 'C', 'B', 'D'];
+        for (let valueIndex = 0; valueIndex < valueNames.length; valueIndex++)
+            document.write(valueNames[valueIndex] + ' = ' + eval(valueNames[valueIndex]) + ';<p/>');
 
         if (C < A)
             throw "Neteisingai pasirinktas rėžis C, jis turi būti A <= C";
@@ -24,11 +23,7 @@
             throw "Nėra sankirtos, nes C > B";
 
         X = C;
-
-        if (B < D)
-            Y = B;
-        else
-            Y = D;
+        Y = B < D ? B : D;
 
         document.write('X = ' + X + ';<p/>' + 'Y = ' + Y + '<p/>');
     }
