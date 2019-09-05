@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.write('<br/>13. <br/>');
     document.write('Student is studying in course ' +
         (student.course === 4
-            ? student.course + 'and course is numeral type;'
+            ? student.course + ' and course is numeral type;'
             : "is not numeral type or student is not studying in course " + student.course + ';'));
 
     document.write('<br/>14. <br/>');
