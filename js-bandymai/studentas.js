@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.write('<br/>4. <br/>');
     document.write(variableList);
 
+    document.write('<br/>6. Check Your Student object in Console...<br/>');
     console.log(student); // 6
 
     document.write('<br/>7. <br/>');
