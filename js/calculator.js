@@ -15,11 +15,10 @@ function dalinti(a, b) {
 }
 
 $('[value=Dauginti]').click(function () {
-    let a = $('#vardas').value;
-    let a = $('#zinute').text();
+    let a = $('#fval').val();
+    let b = $('#sval').val();
     console.log(a, b);
 
-    let rezultatas = dauginti(a, b);
-    $('#rez').appendChild($('<span>'));
-    $('#rez > span').html(rezultatas);
+    let result = dauginti(a, b);
+    $('#rez span').html(result);
 });
