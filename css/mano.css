@@ -32,17 +32,32 @@
 }
 .grid_item_4 {
     grid-area: D;
-    background-color: indianred;
+    background-color: white;
+    text-align: center;
 }
+.grid_item_4 h3 {
+    padding-bottom: 5px;
+    border-bottom: 2px dashed black;
+    margin-bottom: 5px;
+}
+
+.grid_item_4 img {
+    width: 230px;
+}
+
 .grid_item_5 {
     grid-area: E;
-    background-color: deepskyblue;
 }
 
 .grid_item_51 {
     grid-area: E1;
-    background-color: deepskyblue;
 }
+
+.grid_item_5, .grid_item_51 {
+    background-color: white;
+    grid-column-gap: 0;
+}
+
 
 #grid {
     display: grid;
