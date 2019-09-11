@@ -1,13 +1,12 @@
 $(document).ready(function () {
     // Load initial page
-    $.get( '/calculator.html', function( data ) {
+    $.get( '/contact.html', function( data ) {
         let mainContent = $( '#jid_main_content' );
         mainContent.html( data );
         let navbar = $( '.navbar a' );
         navbar.removeClass('active');
-        $(".navbar a[href*='kontaktai']").addClass('active');
-        //mainContent.addClass('jid_apie');
-        mainContent.trigger( "mainContentChanged", [ "kontaktai" ] );
+        $(".navbar a[href*='contact']").addClass('active');
+        mainContent.trigger( "mainContentChanged", [ "contact" ] );
     });
 
 
@@ -19,34 +18,27 @@ $(document).ready(function () {
             $( '.navbar a' ).removeClass('active');
             self.addClass('active');
 
-            if (self.attr('href') === '#apie') {
+            if (self.attr('href') === '#about') {
                 $.get( '/about.html', function( data ) {
                     mainContent.html( data );
-                    //mainContent.removeClass('jid_kontaktai', 'jid_portfolio');
-                    //mainContent.addClass('jid_apie');
-                    mainContent.trigger( "mainContentChanged", [ "apie" ] );
+                    mainContent.trigger( "mainContentChanged", [ "about" ] );
                 });
 
-                //return;
+                return;
             }
-            if (self.attr('href') === '#kontaktai') {
-                $.get( '/calculator.html', function( data ) {
+            if (self.attr('href') === '#contact') {
+                $.get( '/contact.html', function( data ) {
                     mainContent.html( data );
-                    //mainContent.removeClass('jid_apie', 'jid_portfolio');
-                    //mainContent.addClass('jid_kontaktai');
-                    mainContent.trigger( "mainContentChanged", [ "kontaktai" ] );
+                    mainContent.trigger( "mainContentChanged", [ "contact" ] );
                 });
 
                 return;
             }
             if (self.attr('href') === '#portfolio') {
-                //mainContent.removeClass('jid_portfolio');
-                //mainContent.addClass('jid_portfolio');
                 mainContent.trigger( "mainContentChanged", [ "portfolio" ] );
 
-                return;
+                //return;
             }
-
 
 
         }

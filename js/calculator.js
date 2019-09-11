@@ -1,19 +1,3 @@
-function sudeti(a, b) {
-    return a + b;
-}
-
-function atimti(a, b) {
-    return a - b;
-}
-
-function dauginti(a, b) {
-    return a * b;
-}
-
-function dalinti(a, b) {
-    return a / b;
-}
-
 $(document).ready(function () {
     $('#jid_main_content').on( "mainContentChanged", function( event, param1 ) {
         if (param1 == 'kontaktai') {
@@ -55,6 +39,20 @@ $(document).ready(function () {
         }
     });
 
-
-
 });
+
+function sudeti(a, b) {
+    return a + b;
+}
+
+function atimti(a, b) {
+    return a - b;
+}
+
+function dauginti(a, b) {
+    return a * b;
+}
+
+function dalinti(a, b) {
+    return a / b;
+}

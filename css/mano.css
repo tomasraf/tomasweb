@@ -194,4 +194,48 @@
     }
 }
 
+.grid-item-a1 {
+    grid-area: a1;
+}
+.grid-item-a2 {
+    grid-area: a2;
+}
+.grid-item-a3 {
+    grid-area: a3;
+}
+.grid-item-b1 {
+    grid-area: b1;
+}
+.grid-item-b2 {
+    grid-area: b2;
+}
+.grid-item-b3 {
+    grid-area: b3;
+}
+.grid-item-c1 {
+    grid-area: c1;
+}
+.grid-item-c2 {
+    grid-area: c2;
+}
+.grid-item-c3 {
+    grid-area: c3;
+}
 
+.portfolio-grid {
+    display: grid;
+    grid-template-areas:
+            'a1 a2 a3'
+            'b1 b2 b3'
+            'c1 c2 c3';
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows:    250px 250px 250px;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+
+
+
+
+
+}
